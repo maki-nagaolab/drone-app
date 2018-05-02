@@ -103,10 +103,10 @@ public class MoveGimbalWithSpeedView extends BaseThreeBtnView {
         return R.string.gimbal_listview_rotate_gimbal;
     }
 
-    private static class GimbalRotateTimerTask extends TimerTask {
+    public static class GimbalRotateTimerTask extends TimerTask {
         float pitchValue;
 
-        GimbalRotateTimerTask(float pitchValue) {
+        public GimbalRotateTimerTask(float pitchValue) {
             super();
             this.pitchValue = pitchValue;
         }

@@ -22,7 +22,7 @@ public class ObstacleDetectionView extends BaseThreeBtnView {
     private Timer timer;
     private MoveGimbalWithSpeedView.GimbalRotateTimerTask gimbalRotationTimerTask;
 
-    public MoveGimbalWithSpeedView(Context context) {
+    public ObstacleDetectionView(Context context) {
         super(context);
     }
 
