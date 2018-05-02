@@ -20,6 +20,7 @@
 
     <!-- Component list -->
     <string name="component_listview_component">Component</string>
+    <string name="component_listview_obstacle_detection">Obstacle Detection</string> <!-- maki -->
     <string name="component_listview_camera">Camera</string>
     <string name="component_listview_gimbal">Gimbal</string>
     <string name="component_listview_flight_controller">Flight Controller</string>
@@ -41,6 +42,10 @@
 
     <string name="component_listview_sdk_4_5">4.5 New Interfaces</string>
     <string name="component_listview_flight_hub">Flight Hub</string>
+
+    <!-- Obstacle Detection list --> <!-- maki -->
+    <string name="obstacle_detection_subtitle_for_driverless_cars">For Driverless Cars</string>
+    <string name="obstacle_detection_listview_detect">Detect Obstacle</string>
 
     <!-- Camera list -->
     <string name="camera_subtitle_general">General</string>
@@ -93,6 +98,14 @@
     <string name="airlink_listview_wifi_reboot_wifi">Reboot WiFi</string>
     <string name="airlink_subtitle_lb_airlink">Light Bridge Airlink</string>
     <string name="airlink_listview_lb_set_get_channel">Set/Get LBAirlink Channel</string>
+
+    <!--*************** Obstacle Detection string set ***************--> <!-- maki -->
+    <!-- Detect Obstacle -->
+    <string name="detect_obstacle_no_filter">No Filter</string>
+    <string name="detect_obstacle_opt_flow">Opt-Flow</string>
+    <string name="detect_obstacle_masking">Masking</string>
+    <string name="detect_obstacle_description">This view will show the result of obstacle detection.
+    </string>
 
     <!--*************** Camera string set ***************-->
     <!-- Shoot Single Photo View -->
