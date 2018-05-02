@@ -34,6 +34,7 @@ import com.dji.sdk.sample.demo.key.KeyedInterfaceView;
 import com.dji.sdk.sample.demo.missionoperator.WaypointMissionOperatorView;
 import com.dji.sdk.sample.demo.mobileremotecontroller.MobileRemoteControllerView;
 import com.dji.sdk.sample.demo.appactivation.AppActivationView;
+import com.dji.sdk.sample.demo.obstacledetecter.PushObstacleDetectionView;
 import com.dji.sdk.sample.demo.remotecontroller.PushRemoteControllerDataView;
 import com.dji.sdk.sample.demo.timeline.TimelineMissionControlView;
 import com.dji.sdk.sample.demo.obstacledetecter.ObstacleDetectionView;
@@ -94,6 +95,11 @@ public class DemoListView extends FrameLayout {
                          new GroupItem(R.string.component_listview_timeline_mission_control,
                      TimelineMissionControlView.class));
 
+        builder.addGroup(R.string.component_listview_obstacle_detection, //maki
+                         false,
+                         new GroupItem(R.string.obstacle_detection_subtitle_for_driverless_cars, PushObstacleDetectionView.class),
+                         new GroupItem(R.string.obstacle_detection_listview_detect, ObstacleDetectionView.class));
+
         builder.addGroup(R.string.component_listview_camera,
                          false,
                          new GroupItem(R.string.camera_listview_push_info, PushCameraDataView.class),
@@ -142,9 +148,9 @@ public class DemoListView extends FrameLayout {
                          new GroupItem(R.string.component_listview_mobile_remote_controller,
                                        MobileRemoteControllerView.class));
 
-        builder.addGroup(R.string.component_listview_gimbal,
-                         false,
-                         new GroupItem(R.string.gimbal_listview_rotate_gimbal, MoveGimbalWithSpeedView.class));
+        //builder.addGroup(R.string.component_listview_gimbal,
+        //                false,
+        //                 new GroupItem(R.string.gimbal_listview_rotate_gimbal, MoveGimbalWithSpeedView.class));
 
         // Set-up ExpandableListView
         expandableListView = (ExpandableListView) view.findViewById(R.id.expandable_list);
