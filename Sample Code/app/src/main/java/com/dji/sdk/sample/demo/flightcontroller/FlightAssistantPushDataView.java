@@ -113,7 +113,7 @@ public class FlightAssistantPushDataView extends BaseThreeBtnView {
     }
 
     @Override
-    protected int getWatchResourceValue() { return -1; }
+    protected String getWatchResourceValue() { return null; }
 
     @Override
     protected void handleLeftBtnClick() {

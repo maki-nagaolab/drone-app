@@ -72,7 +72,7 @@ public abstract class BaseThreeBtnView extends LinearLayout implements View.OnCl
         }
 
         infoText.setText(getString(getDescriptionResourceId()));
-        watchText.setText(getString(getWatchResourceValue()));
+        watchText.setText(getWatchResourceValue());
     }
 
     private String getString(int id) {
@@ -127,7 +127,7 @@ public abstract class BaseThreeBtnView extends LinearLayout implements View.OnCl
 
     protected abstract int getDescriptionResourceId();
 
-    protected abstract int getWatchResourceValue();
+    protected abstract String getWatchResourceValue();
 
     protected abstract void handleMiddleBtnClick();
 
