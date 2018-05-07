@@ -41,6 +41,9 @@ public class RebootWiFiAirlinkView extends BaseThreeBtnView {
     }
 
     @Override
+    protected int getWatchResourceValue() {return -1;}
+
+    @Override
     protected void handleLeftBtnClick() {
 
     }

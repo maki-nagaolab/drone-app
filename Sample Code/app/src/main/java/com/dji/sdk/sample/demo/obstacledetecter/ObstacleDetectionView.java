@@ -27,24 +27,19 @@ public class ObstacleDetectionView extends BaseThreeBtnView {
     }
 
     @Override
-    protected int getMiddleBtnTextResourceId() {
-        return R.string.move_gimbal_in_speed_up;
-    }
+    protected int getMiddleBtnTextResourceId() { return R.string.detect_obstacle_opt_flow; }
 
     @Override
-    protected int getLeftBtnTextResourceId() {
-        return R.string.move_gimbal_in_speed_stop;
-    }
+    protected int getLeftBtnTextResourceId() { return R.string.detect_obstacle_no_filter; }
 
     @Override
-    protected int getRightBtnTextResourceId() {
-        return R.string.move_gimbal_in_speed_down;
-    }
+    protected int getRightBtnTextResourceId() { return R.string.detect_obstacle_masking; }
 
     @Override
-    protected int getDescriptionResourceId() {
-        return R.string.move_gimbal_in_speed_description;
-    }
+    protected int getDescriptionResourceId() { return R.string.detect_obstacle_description; }
+
+    @Override
+    protected int getWatchResourceValue() { return 1; }
 
     @Override
     protected void handleMiddleBtnClick() {

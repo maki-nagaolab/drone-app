@@ -18,6 +18,7 @@ public abstract class BaseThreeBtnView extends LinearLayout implements View.OnCl
 
     protected final static int DISABLE = 0;
     private TextView infoText;
+    private TextView watchText;
     protected Button middleBtn;
     protected Button leftBtn;
     protected Button rightBtn;
@@ -42,6 +43,7 @@ public abstract class BaseThreeBtnView extends LinearLayout implements View.OnCl
         layoutInflater.inflate(R.layout.view_three_btn, this, true);
 
         infoText = (TextView) findViewById(R.id.text_info);
+        watchText = (TextView) findViewById(R.id.text_watch);
 
         middleBtn = (Button) findViewById(R.id.btn_middle);
 
@@ -70,6 +72,7 @@ public abstract class BaseThreeBtnView extends LinearLayout implements View.OnCl
         }
 
         infoText.setText(getString(getDescriptionResourceId()));
+        watchText.setText(getString(getWatchResourceValue()));
     }
 
     private String getString(int id) {
@@ -102,6 +105,7 @@ public abstract class BaseThreeBtnView extends LinearLayout implements View.OnCl
             @Override
             public void run() {
                 infoText.setText(newDescription);
+                watchText.setText(newDescription);
             }
         });
     }
@@ -122,6 +126,8 @@ public abstract class BaseThreeBtnView extends LinearLayout implements View.OnCl
     protected abstract int getRightBtnTextResourceId();
 
     protected abstract int getDescriptionResourceId();
+
+    protected abstract int getWatchResourceValue();
 
     protected abstract void handleMiddleBtnClick();
 

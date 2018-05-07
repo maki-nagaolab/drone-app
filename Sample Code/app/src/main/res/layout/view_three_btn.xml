@@ -6,6 +6,14 @@
     <com.dji.sdk.sample.internal.view.BaseCameraView style="@style/main_camera_view"
                                                      android:layout_marginTop="100dp"/>
 
+    <TextView
+        android:id="@+id/text_watch"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="test"/>
 
     <TextView
         android:id="@+id/text_info"
