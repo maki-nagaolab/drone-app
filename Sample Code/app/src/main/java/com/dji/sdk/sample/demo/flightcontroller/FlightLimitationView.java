@@ -38,6 +38,9 @@ public class FlightLimitationView extends BaseThreeBtnView {
     }
 
     @Override
+    protected int getWatchResourceValue() { return -1; }
+
+    @Override
     protected int getDescriptionResourceId() {
         return R.string.flight_limitation_description;
     }
