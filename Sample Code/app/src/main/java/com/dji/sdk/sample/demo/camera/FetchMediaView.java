@@ -119,7 +119,7 @@ public class FetchMediaView extends BaseThreeBtnView {
     }
 
     @Override
-    protected int getWatchResourceValue() {return -1;}
+    protected int getWatchResourceValue() { return -1; }
 
     @Override
     protected void handleMiddleBtnClick() {

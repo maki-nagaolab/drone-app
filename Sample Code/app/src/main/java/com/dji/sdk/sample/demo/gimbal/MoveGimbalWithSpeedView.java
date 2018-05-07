@@ -44,6 +44,9 @@ public class MoveGimbalWithSpeedView extends BaseThreeBtnView {
     }
 
     @Override
+    protected int getWatchResourceValue() { return -1; }
+
+    @Override
     protected void handleMiddleBtnClick() {
         if (timer == null) {
             timer = new Timer();

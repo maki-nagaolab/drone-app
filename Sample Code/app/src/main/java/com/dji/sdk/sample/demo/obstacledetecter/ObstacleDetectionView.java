@@ -10,6 +10,7 @@ import dji.common.error.DJIError;
 import dji.common.gimbal.Rotation;
 import dji.common.gimbal.RotationMode;
 import dji.common.util.CommonCallbacks;
+import dji.common.flightcontroller.imu;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -39,7 +40,7 @@ public class ObstacleDetectionView extends BaseThreeBtnView {
     protected int getDescriptionResourceId() { return R.string.detect_obstacle_description; }
 
     @Override
-    protected int getWatchResourceValue() { return 1; }
+    protected int getWatchResourceValue() { return getAccelerometerState(); }
 
     @Override
     protected void handleMiddleBtnClick() {

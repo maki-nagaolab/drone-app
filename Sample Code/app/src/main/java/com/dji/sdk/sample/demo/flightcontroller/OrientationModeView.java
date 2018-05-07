@@ -75,6 +75,9 @@ public class OrientationModeView extends BaseThreeBtnView {
     }
 
     @Override
+    protected int getWatchResourceValue() { return -1; }
+
+    @Override
     protected void handleMiddleBtnClick() {
         if (ModuleVerificationUtil.isFlightControllerAvailable()) {
             flightController = DJISampleApplication.getAircraftInstance().getFlightController();

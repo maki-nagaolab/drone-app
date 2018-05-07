@@ -65,6 +65,9 @@ public class CompassCalibrationView extends BaseThreeBtnView {
     }
 
     @Override
+    protected int getWatchResourceValue() { return -1; }
+
+    @Override
     protected void handleRightBtnClick() {
         if (ModuleVerificationUtil.isCompassAvailable()) {
             compass = ((Aircraft) DJISampleApplication.getProductInstance()).getFlightController().getCompass();
