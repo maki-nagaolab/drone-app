@@ -87,6 +87,8 @@ public class RecordVideoView extends BaseThreeBtnView {
     }
 
     @Override
+    protected int getWatchResourceValue() { return -1; }
+    @Override
     protected void handleLeftBtnClick() {
 
         changeDescription("00:00:00");
