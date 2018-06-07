@@ -1,31 +1,25 @@
 package com.dji.sdk.sample.demo.obstacledetecter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 import com.dji.sdk.sample.R;
 import com.dji.sdk.sample.demo.gimbal.MoveGimbalWithSpeedView;
 import com.dji.sdk.sample.internal.controller.DJISampleApplication;
-import com.dji.sdk.sample.internal.view.BaseThreeBtnView;
 import com.dji.sdk.sample.internal.utils.ModuleVerificationUtil;
-
-import dji.common.camera.SettingsDefinitions;
-import dji.common.error.DJIError;
-import dji.common.flightcontroller.imu.IMUState;
-import dji.common.flightcontroller.imu.SensorState;
-import dji.common.gimbal.Rotation;
-import dji.common.gimbal.RotationMode;
-import dji.common.util.CommonCallbacks;
-import dji.keysdk.CameraKey;
-import dji.keysdk.DJIKey;
-import dji.keysdk.FlightControllerKey;
-import dji.keysdk.callback.GetCallback;
-import dji.keysdk.callback.KeyListener;
-import dji.sdk.sdkmanager.DJISDKManager;
+import com.dji.sdk.sample.internal.view.BaseThreeBtnView;
 
 import java.util.Timer;
 import java.util.TimerTask;
+
+import dji.common.error.DJIError;
+import dji.common.gimbal.Rotation;
+import dji.common.gimbal.RotationMode;
+import dji.common.util.CommonCallbacks;
+import dji.keysdk.DJIKey;
+import dji.keysdk.FlightControllerKey;
+import dji.keysdk.callback.KeyListener;
+import dji.sdk.sdkmanager.DJISDKManager;
 
 /**
  * 障害物検出を行うためのクラス
